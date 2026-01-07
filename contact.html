@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ROJUN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">ROJUN</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="contact-hero-container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">
+                Whether you're interested in distribution, investment, or just want to learn more—we'd love to hear from you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-content">
+                <h2 class="section-title">Send Us a Message</h2>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-input"
+                            placeholder="your@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message (Optional)</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="form-textarea"
+                            rows="6"
+                            placeholder="Tell us why you're interested in Rojun..."
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button">Send Message</button>
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3 class="contact-info-title">Direct Contact</h3>
+                <div class="contact-detail">
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:contact@rojun.com" class="contact-value">contact@rojun.com</a>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-label">Website</div>
+                    <div class="contact-value">www.rojun.com</div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-label">Based in</div>
+                    <div class="contact-value">San Francisco, CA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Info Section -->
+    <section class="investor-section">
+        <div class="investor-container">
+            <h2 class="section-title">Investor Information</h2>
+            <p class="investor-intro">
+                We're currently raising <strong>$30K</strong> in seed capital to launch our first production run.
+                Here's our roadmap to market:
+            </p>
+
+            <!-- Roadmap -->
+            <div class="roadmap">
+                <div class="roadmap-phase">
+                    <div class="phase-number">1</div>
+                    <div class="phase-content">
+                        <h3 class="phase-title">SF Local Launch</h3>
+                        <p class="phase-description">
+                            Bars, Asian Fusion restaurants, and Boba shops. Founder-led hand delivery
+                            to build relationships and gather real-time feedback.
+                        </p>
+                        <div class="phase-timeline">Q1 2026</div>
+                    </div>
+                </div>
+
+                <div class="roadmap-connector"></div>
+
+                <div class="roadmap-phase">
+                    <div class="phase-number">2</div>
+                    <div class="phase-content">
+                        <h3 class="phase-title">Distributor Partnership</h3>
+                        <p class="phase-description">
+                            Securing Northern California coverage. Focus on premium liquor chains
+                            and specialty retailers.
+                        </p>
+                        <div class="phase-timeline">Q2 2026</div>
+                    </div>
+                </div>
+
+                <div class="roadmap-connector"></div>
+
+                <div class="roadmap-phase">
+                    <div class="phase-number">3</div>
+                    <div class="phase-content">
+                        <h3 class="phase-title">Regional Expansion</h3>
+                        <p class="phase-description">
+                            Entry into Southern California (LA/OC) and major Asian grocery chains
+                            like 99 Ranch and HMart.
+                        </p>
+                        <div class="phase-timeline">Q3-Q4 2026</div>
+                    </div>
+                </div>
+
+                <div class="roadmap-connector"></div>
+
+                <div class="roadmap-phase">
+                    <div class="phase-number">4</div>
+                    <div class="phase-content">
+                        <h3 class="phase-title">Brand Lifestyle</h3>
+                        <p class="phase-description">
+                            Seasonal flavor drops and community events to build brand loyalty
+                            and organic growth.
+                        </p>
+                        <div class="phase-timeline">2027</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capital Allocation -->
+            <div class="capital-section">
+                <h3 class="capital-title">Capital Allocation</h3>
+                <div class="allocation-grid">
+                    <div class="allocation-item">
+                        <div class="allocation-amount">$22K</div>
+                        <div class="allocation-label">Initial Production Run</div>
+                        <div class="allocation-bar" style="width: 73%"></div>
+                    </div>
+                    <div class="allocation-item">
+                        <div class="allocation-amount">$6K</div>
+                        <div class="allocation-label">Pre-Production / Legal</div>
+                        <div class="allocation-bar" style="width: 20%"></div>
+                    </div>
+                    <div class="allocation-item">
+                        <div class="allocation-amount">$2K</div>
+                        <div class="allocation-label">Warehousing / Logistics</div>
+                        <div class="allocation-bar" style="width: 7%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unit Economics -->
+            <div class="economics-section">
+                <h3 class="economics-title">Unit Economics</h3>
+                <div class="economics-grid">
+                    <div class="economics-card">
+                        <div class="economics-label">Early COGS</div>
+                        <div class="economics-value">$0.85 - $1.00</div>
+                    </div>
+                    <div class="economics-card">
+                        <div class="economics-label">Wholesale Price</div>
+                        <div class="economics-value">$2.00 - $2.50</div>
+                    </div>
+                    <div class="economics-card">
+                        <div class="economics-label">Retail MSRP</div>
+                        <div class="economics-value">$3.99 - $4.99</div>
+                    </div>
+                    <div class="economics-card highlight">
+                        <div class="economics-label">Target Gross Margin</div>
+                        <div class="economics-value">60-68%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Revolutionizing Tea.</h2>
+            <p class="cta-description">
+                Join us in the Rojun journey. Let's build the future of hard tea together.
+            </p>
+            <a href="mailto:contact@rojun.com" class="cta-button">Reach Out to Invest</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">ROJUN</div>
+                <p class="footer-tagline">The Future of Hard Tea</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:contact@rojun.com">contact@rojun.com</a>
+                <p class="footer-website">www.rojun.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rojun. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

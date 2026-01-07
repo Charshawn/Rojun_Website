@@ -3,130 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rojun - Welcome</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            padding: 60px 40px;
-            max-width: 600px;
-            text-align: center;
-            animation: fadeIn 0.8s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #667eea;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .cta-button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
-        }
-
-        .features {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-        }
-
-        .feature {
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .feature:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature h3 {
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>ROJUN - The Future of Hard Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Rojun</h1>
-        <p>Your amazing website is coming soon. Stay tuned for something great!</p>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">ROJUN</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <button class="cta-button" onclick="handleClick()">Get Started</button>
-
-        <div class="features">
-            <div class="feature">
-                <h3>Fast</h3>
-                <p>Lightning quick performance</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">THE FUTURE OF HARD TEA</p>
+                <h1 class="hero-title">ROJUN</h1>
+                <p class="hero-description">
+                    Premium Lychee Black Tea Rum. High-recognition flavor meets spirits-based sophistication.
+                    Reimagined for the wellness-conscious generation.
+                </p>
+                <button class="cta-button" id="learn-more-btn">Learn More</button>
             </div>
-            <div class="feature">
-                <h3>Modern</h3>
-                <p>Beautiful, clean design</p>
-            </div>
-            <div class="feature">
-                <h3>Reliable</h3>
-                <p>Always available</p>
+            <div class="hero-image">
+                <!-- Add your bottle image here from investor deck (page 3 or 8) -->
+                <div class="bottle-placeholder">
+                    <div class="bottle-silhouette">
+                        <svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Simplified bottle shape -->
+                            <rect x="70" y="20" width="60" height="30" rx="5" fill="#D4AF37"/>
+                            <rect x="75" y="50" width="50" height="15" fill="#8B6F47"/>
+                            <path d="M 75 65 L 75 350 Q 75 370, 95 370 L 105 370 Q 125 370, 125 350 L 125 65 Z" fill="#6B3410" opacity="0.8"/>
+                            <ellipse cx="100" cy="200" rx="35" ry="40" fill="#4A2410" opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="wave-decoration"></div>
+    </section>
 
-    <script>
-        function handleClick() {
-            alert('Welcome to Rojun! Update this function in index.html');
-        }
-    </script>
+    <!-- Product Specs Section -->
+    <section class="product-specs" id="product-section">
+        <div class="specs-container">
+            <div class="specs-image">
+                <div class="product-bottle">
+                    <!-- Bottle image with annotation lines -->
+                    <div class="bottle-display">
+                        <svg viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg" class="bottle-svg">
+                            <!-- Bottle -->
+                            <rect x="100" y="30" width="80" height="40" rx="8" fill="#D4AF37"/>
+                            <rect x="105" y="70" width="70" height="20" fill="#8B6F47"/>
+                            <path d="M 105 90 L 105 430 Q 105 460, 130 460 L 150 460 Q 175 460, 175 430 L 175 90 Z" fill="#6B3410" opacity="0.8"/>
+                            <rect x="115" y="200" width="50" height="80" fill="#F5F1E8" opacity="0.9"/>
+                            <text x="140" y="235" font-size="14" font-weight="bold" text-anchor="middle" fill="#1A1A1A">ROJUN</text>
+                            <text x="140" y="255" font-size="12" text-anchor="middle" fill="#8B6F47">LYCHEE</text>
+
+                            <!-- Annotation Lines -->
+                            <g class="annotation-line spec-line-1" opacity="0">
+                                <line x1="90" y1="100" x2="30" y2="80" stroke="#D4AF37" stroke-width="2"/>
+                                <circle cx="30" cy="80" r="4" fill="#D4AF37"/>
+                            </g>
+                            <g class="annotation-line spec-line-2" opacity="0">
+                                <line x1="180" y1="150" x2="240" y2="130" stroke="#D4AF37" stroke-width="2"/>
+                                <circle cx="240" cy="130" r="4" fill="#D4AF37"/>
+                            </g>
+                            <g class="annotation-line spec-line-3" opacity="0">
+                                <line x1="90" y1="250" x2="30" y2="270" stroke="#D4AF37" stroke-width="2"/>
+                                <circle cx="30" cy="270" r="4" fill="#D4AF37"/>
+                            </g>
+                            <g class="annotation-line spec-line-4" opacity="0">
+                                <line x1="180" y1="350" x2="240" y2="370" stroke="#D4AF37" stroke-width="2"/>
+                                <circle cx="240" cy="370" r="4" fill="#D4AF37"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specs-content">
+                <h2 class="specs-title">A Different Kind of Hard Tea</h2>
+                <div class="spec-items">
+                    <div class="spec-item spec-1" data-line="1">
+                        <div class="spec-label">&lt;10g Sugar</div>
+                        <p class="spec-description">Naturally sweetened with Monk Fruit. No aftertaste, no compromise.</p>
+                    </div>
+                    <div class="spec-item spec-2" data-line="2">
+                        <div class="spec-label">4.5% ABV</div>
+                        <p class="spec-description">Sessionable strength. Perfect for any occasion.</p>
+                    </div>
+                    <div class="spec-item spec-3" data-line="3">
+                        <div class="spec-label">Premium Rum Base</div>
+                        <p class="spec-description">Spirits-based sophistication, not malt-based sugar bombs.</p>
+                    </div>
+                    <div class="spec-item spec-4" data-line="4">
+                        <div class="spec-label">Traditional Asian Flavors</div>
+                        <p class="spec-description">Lychee Black Tea. Authentic, high-recognition taste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Exists Section -->
+    <section class="why-section">
+        <div class="why-container">
+            <h2 class="section-title">The Category is Broken</h2>
+
+            <div class="comparison-grid">
+                <div class="comparison-card old-guard">
+                    <div class="card-icon">☠️</div>
+                    <h3 class="card-title">The Old Guard</h3>
+                    <p class="card-description">
+                        Malt-based "Sugar Bombs" like Twisted Tea (20-30g per can).
+                        Generic artificial flavors and "frat-house" branding that alienates modern professionals.
+                    </p>
+                    <div class="card-stat">23g Added Sugars</div>
+                </div>
+
+                <div class="comparison-card rojun-relief">
+                    <div class="card-icon">🌸</div>
+                    <h3 class="card-title">The Rojun Relief</h3>
+                    <p class="card-description">
+                        Rum-based sophistication. Under 10g of sugar naturally sweetened with Monk Fruit.
+                        Elegant, minimalist Asian-inspired design.
+                    </p>
+                    <div class="card-stat">&lt;10g Sugar</div>
+                </div>
+            </div>
+
+            <div class="market-opportunity">
+                <h3 class="opportunity-title">An Explosive $49B Opportunity</h3>
+                <p class="opportunity-description">
+                    Hard Tea is outpacing the broader market with a projected <strong>24.6% CAGR</strong> through 2034
+                </p>
+                <div class="growth-bar">
+                    <div class="growth-start">2024: $27.9B</div>
+                    <div class="growth-line"></div>
+                    <div class="growth-end">2034: $49B</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Launch Info Section -->
+    <section class="launch-section">
+        <div class="launch-container">
+            <div class="launch-content">
+                <h2 class="launch-title">Revolutionizing Tea.</h2>
+                <p class="launch-subtitle">Join us in the Rojun journey.</p>
+                <div class="launch-details">
+                    <div class="launch-item">
+                        <span class="launch-label">Launching</span>
+                        <span class="launch-value">Q1 2026</span>
+                    </div>
+                    <div class="launch-item">
+                        <span class="launch-label">Starting in</span>
+                        <span class="launch-value">San Francisco</span>
+                    </div>
+                </div>
+                <a href="contact.html" class="cta-button secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">ROJUN</div>
+                <p class="footer-tagline">The Future of Hard Tea</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:contact@rojun.com">contact@rojun.com</a>
+                <p class="footer-website">www.rojun.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rojun. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
