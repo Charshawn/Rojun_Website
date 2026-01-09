@@ -235,6 +235,14 @@ img {
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
 }
 
+.hero-bottle-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
+    animation: fadeIn 1s ease;
+}
+
 .wave-decoration {
     position: absolute;
     bottom: 0;
@@ -273,6 +281,14 @@ img {
     width: 100%;
     max-width: 350px;
     height: auto;
+}
+
+.specs-bottle-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+    animation: fadeIn 1s ease;
 }
 
 .annotation-line {
