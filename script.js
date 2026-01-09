@@ -237,61 +237,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     // COUNTER ANIMATION FOR STATS
     // ========================================
-
-    function animateCounter(element, target, duration = 2000) {
-        const start = 0;
-        const increment = target / (duration / 16);
-        let current = start;
-
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                element.textContent = target;
-                clearInterval(timer);
-            } else {
-                element.textContent = Math.floor(current);
-            }
-        }, 16);
-    }
-
-    const statValues = document.querySelectorAll('.stat-value');
-
-    if (statValues.length > 0) {
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const value = entry.target.textContent;
-                    const numericValue = parseInt(value.replace(/[^0-9]/g, ''));
-
-                    if (!isNaN(numericValue)) {
-                        const suffix = value.replace(numericValue.toString(), '');
-                        entry.target.textContent = '0' + suffix;
-
-                        setTimeout(() => {
-                            let current = 0;
-                            const increment = numericValue / 60;
-
-                            const counter = setInterval(() => {
-                                current += increment;
-                                if (current >= numericValue) {
-                                    entry.target.textContent = numericValue + suffix;
-                                    clearInterval(counter);
-                                } else {
-                                    entry.target.textContent = Math.floor(current) + suffix;
-                                }
-                            }, 30);
-                        }, 300);
-                    }
-
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        statValues.forEach(stat => {
-            statsObserver.observe(stat);
-        });
-    }
+    // Disabled to preserve formatted values like "$69.2B" and "5.8%"
+    // Stats display correctly without animation
 
     // ========================================
     // MOBILE MENU TOGGLE (if needed)
