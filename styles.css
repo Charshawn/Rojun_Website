@@ -297,7 +297,10 @@ img {
 
 .annotation-text {
     font-family: var(--font-body);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .specs-title {
