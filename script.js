@@ -98,66 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========================================
     // CONTACT FORM HANDLING
     // ========================================
-
-    const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Basic validation
-            if (!email || !validateEmail(email)) {
-                showFormStatus('Please enter a valid email address.', 'error');
-                return;
-            }
-
-            // Simulate form submission
-            // In a real implementation, you would send this to a backend server
-            simulateFormSubmission(email, message);
-        });
-    }
-
-    function validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
-
-    function simulateFormSubmission(email, message) {
-        // Show loading state
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-
-        // Simulate API call delay
-        setTimeout(() => {
-            showFormStatus('Message sent successfully! We\'ll get back to you soon.', 'success');
-            contactForm.reset();
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-
-            // Log to console (in production, this would be sent to your backend)
-            console.log('Form submission:', { email, message });
-        }, 1500);
-    }
-
-    function showFormStatus(message, type) {
-        if (formStatus) {
-            formStatus.textContent = message;
-            formStatus.className = `form-status ${type}`;
-
-            // Auto-hide success message after 5 seconds
-            if (type === 'success') {
-                setTimeout(() => {
-                    formStatus.style.display = 'none';
-                }, 5000);
-            }
-        }
-    }
+    // Contact form removed - replaced with mailto: button
 
     // ========================================
     // NAVBAR SCROLL EFFECT
